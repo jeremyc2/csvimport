@@ -4,12 +4,8 @@ exports.get = function(req, res) {
 
 	//var fields = Object.keys(Author.schema.obj);
 	var fields = [
-		'name.firstName',
-		'name.lastName',
-		'biography',
-		'twitter',
-		'facebook',
-		'linkedin'
+		'reference',
+		''
 	];
 
 	var csv = json2csv({ data: '', fields: fields });
